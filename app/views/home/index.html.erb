@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+
+<body>
+
+<main>
+
+
+  <!-- Банер з одним зображенням -->
+  <div class="banner">
+    <%= image_tag 'photomakeup.jpg', alt: 'Банер', class: 'img-fluid' %>
+  </div>
+</main>
+<main>
+
+  <h1 class="nazva">Makeup - Найпопулярніші товари</h1>
+  <!-- Розділ з товарами -->
+  <div class="products">
+    <div class="product">
+      <img src="<%= asset_path('tush.jpg') %>" alt="Туш 1">
+      <h3>Туш Heimish Dailism</h3>
+      <p>Ця туш надає об'єм і довжину, забезпечуючи ідеальне покриття та стійкий ефект без розтікання.</p>
+      <p><strong>Ціна: 275 грн</strong></p>
+
+      <!-- Форма для додавання товару в корзину -->
+      <%= form_with url: add_item_cart_path, method: :post, local: true do |form| %>
+        <%= form.hidden_field :product_id, value: 1 %>  <!-- Приклад ID товару -->
+        <%= form.submit 'Додати в кошик', class: 'btn' %>
+      <% end %>
+    </div>
+
+    <div class="product">
+      <img src="<%= asset_path('pudra.jpg') %>" alt="Туш 2">
+      <h3>Пудра матова Oil Paese</h3>
+      <p>Ця пудра вирівнює тон шкіри, матує, забезпечує легке покриття та дуже тривалий ефект.</p>
+      <p><strong>Ціна: 345 грн</strong></p>
+
+      <!-- Форма для додавання товару в корзину -->
+      <%= form_with url: add_item_cart_path, method: :post, local: true do |form| %>
+        <%= form.hidden_field :product_id, value: 2 %>  <!-- Приклад ID товару -->
+        <%= form.submit 'Додати в кошик', class: 'btn' %>
+      <% end %>
+    </div>
+
+    <div class="product">
+      <img src="<%= asset_path('maska.jpg') %>" alt="Туш 3">
+      <h3>Відновлююча крем-маска Dr. Green</h3>
+      <p>Ця маска відновлює, зволожує та живить шкіру, надаючи їй здоровий вигляд і м’якість.</p>
+      <p><strong>Ціна: 299 грн</strong></p>
+
+      <!-- Форма для додавання товару в корзину -->
+      <%= form_with url: add_item_cart_path, method: :post, local: true do |form| %>
+        <%= form.hidden_field :product_id, value: 3 %>  <!-- Приклад ID товару -->
+        <%= form.submit 'Додати в кошик', class: 'btn' %>
+      <% end %>
+    </div>
+  </div>
+
+</main>
+
+<%= image_tag '123123.jpg',  class: 'logo' %>
+</body>
+
+<footer>
+  <div class="footer-content">
+    <a>&copy; 2024 Makeup всі права захищено.</a>
+    <div class="social-icons">
+      <a href="https://www.instagram.com" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+      <a href="https://www.facebook.com" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+      <a href="https://www.tiktok.com" target="_blank"><img src="tiktok-icon.png" alt="TikTok"></a>
+    </div>
+  </div>
+</footer>
+
+
+
+</html>

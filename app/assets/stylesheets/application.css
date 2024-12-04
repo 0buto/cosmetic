@@ -1,0 +1,777 @@
+/* Стилізація контейнера хедера */
+header {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8; /* Легкий фон для хедера */
+    padding: 20px 0;
+    text-align: center;
+    border: 1px solid #ff66b2;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Відстань між елементами */
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333; /* Колір тексту */
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #ff66b2; /* Колір тексту при наведенні */
+}
+
+/* Стилі для форми виходу  */
+h2 {
+    text-align: center; /* Вирівнює заголовок по центру */
+    font-size: 24px; /* Можна налаштувати розмір шрифта */
+    font-weight: bold; /* Надає заголовку жирний шрифт */
+    color: #333; /* Можна змінити колір заголовка */
+    margin-bottom: 20px; /* Відступ знизу для відділення від форми */
+}
+
+.logout-link {
+    background: none;
+    border: none;
+    color: #333; /* Колір тексту */
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: normal;
+    padding: 0;
+    cursor: pointer;
+}
+
+.logout-link:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+/* Загальні стилі для форм log innnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn*/
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-input {
+    width: 100%;
+    max-width: 400px; /* Максимальна ширина полів */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 0 auto; /* Центрує поле */
+}
+
+.form-input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.form-links {
+    margin-top: 15px;
+}
+
+.form-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.form-link:hover {
+    text-decoration: underline;
+}
+
+/* Стилі для кнопок */
+.btn-submit {
+    width: 100%;
+    max-width: 400px; /* Максимальна ширина кнопки */
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 0 auto; /* Центрує кнопку */
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+/* Стилі для форми */
+.login-form, .signup-form, .password-reset-form {
+    width: 100%;
+    max-width: 450px; /* Максимальна ширина для всієї форми */
+    margin: 0 auto; /* Центрує форму на сторінці */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* golovnaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+body {
+    font-family: Arial, sans-serif;
+}
+
+.nazva {
+    text-align: center;
+}
+
+.banner img {
+    width: 100%;
+    height: 400px; /* Висота банеру */
+    object-fit: cover; /* Обрізає зображення, зберігаючи пропорції */
+    object-position: center; /* Центрує зображення, обрізаючи зверху і знизу */
+}
+
+
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    width: 24%; /* Зменшено на 20% від 30% */
+    text-align: center;
+    border: 1px solid #ff66b2;
+    border-radius: 10px;
+    padding: 8px; /* Трохи зменшено padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #e4dfdf;
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product h3 {
+    font-size: 1.2em; /* Зменшено розмір шрифта */
+    margin: 8px 0; /* Зменшено відступи */
+}
+
+.product p {
+    font-size: 1.1em; /* Зменшено розмір шрифта */
+    margin: 8px 0; /* Зменшено відступи */
+}
+
+.product .btn {
+    display: inline-block;
+    padding: 8px 16px; /* Зменшено padding */
+    background-color: #ffffff;
+    color: #ff66b2;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid #ff66b2;
+}
+
+.product .btn:hover {
+    background-color: #f3adf8;
+}
+    /* cartttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt */
+
+.cart-title {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff66b2;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.cart-table th, .cart-table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.cart-table th {
+    background-color: #f7f7f7;
+}
+
+.cart-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.product-name, .product-quantity, .product-price {
+    font-size: 1.2em;
+}
+
+.product-actions {
+    text-align: center;
+}
+
+.remove-btn {
+    background-color: #ff6666;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+}
+
+.remove-btn:hover {
+    background-color: #ff4444;
+}
+
+.total-price {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    color: #ff66b2;
+    margin-top: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Горизонтальне вирівнювання */
+    margin-top: 15px;
+}
+
+.checkout-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff66b2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.checkout-btn:hover {
+    background-color: #e55b9a;
+}
+
+.empty-cart-message {
+    text-align: center;
+    font-style: italic;
+    color: #999;
+}
+
+
+
+
+/* Стилі для заголовка замовлення         **************************/
+.order-title {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ff66b2;
+    font-weight: bold;
+}
+
+/* Стилі для блоків форми */
+.order-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Стилі для заголовків */
+.delivery-method-title, .total-price-title {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Стилі для select (вибір способу доставки) */
+.delivery-method-select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+}
+
+/* Стилі для кнопки відправки */
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff66b2;
+    color: #fff;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #e55b9a;
+}
+
+/* Зробимо кнопки чіткими при фокусуванні */
+.btn-submit:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Стилі для полів форми */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group h3 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* PASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS*/
+.order-title {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ff66b2;
+    font-weight: bold;
+}
+
+/* Стилі для блоку форми */
+.order-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Стилі для заголовків в формі */
+.delivery-method-title, .total-price-title {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Стилі для форми оплати */
+.payment-form {
+    margin-top: 20px;
+}
+
+/* Контейнер для кнопки Stripe */
+.stripe-button-container {
+    text-align: right; /* Розташування кнопки праворуч */
+    margin-top: 20px; /* Відступ зверху */
+}
+
+
+/* Кнопка Stripe */
+.stripe-button-el {
+    font-family: Arial, sans-serif;
+    display: inline-block;
+    width: auto;
+    padding: 12px 24px; /* Відступи для кращого вигляду */
+    background-color: #ff66b2 !important; /* Основний колір кнопки */
+    color: #ffffff !important; /* Колір тексту */
+    font-size: 1.2em !important;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease !important; /* Анімація зміни кольору */
+}
+/* Ховер для кнопки Stripe */
+.stripe-button-el:hover {
+    background-color: #e55b9a !important; /* Колір при наведенні */
+}
+
+
+.stripe-button:hover {
+    background-color: #e55b9a;
+}
+
+.stripe-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Стилі для групи форми */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group h3 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Контактиuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu */
+.contact-title {
+    font-family: Arial, sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+    color: #ff66b2;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact-details {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Форма для зв'язку */
+.form-title {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-submit {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ff66b2;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.form-submit:hover {
+    background-color: #e55b9a;
+}
+
+/* Контейнер для форми */
+.form-container {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px; /* Максимальна ширина форми */
+    margin: 0 auto; /* Центрує контейнер на сторінці */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовок форми */
+.form-title {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #333;
+}
+
+/* Група полів форми */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Поля вводу */
+.form-input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Кнопка відправки */
+.form-submit {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ff66b2;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.form-submit:hover {
+    background-color: #e55b9a;
+}
+
+/* ffffffffffffffffffffffffffOTERRRRRRRRRRRRRRRRRRRRRRRRRR */
+html, body {
+    margin: 0; /* Видаляємо відступи */
+    padding: 0; /* Видаляємо паддінг */
+}
+
+footer {
+    font-family: Arial, sans-serif;
+    background-color: #ff66b2; /* Рожевий фон */
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    border: 1px solid #000000;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 1.2em;
+    color: white;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px; /* Розмір значків */
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2); /* Ефект при наведенні */
+}
+
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 450px; /* Висота логотипу */
+
+}
+
+/* Стилі для блоку відгуків */
+.reviews-container {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Стилі для заголовків на сторінці відгуків */
+.reviews-container h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color: #ff66b2;
+    margin-bottom: 20px;
+}
+
+/* Стилі для кожного відгуку */
+.review-item {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.review-item strong {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.review-item p {
+    font-size: 1em;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Кнопка для переходу до форми відгуку */
+.btn-add-review {
+    display: block;
+    width: 200px;
+    margin: 30px auto;
+    padding: 10px;
+    background-color: #ff66b2;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-add-review:hover {
+    background-color: #e55b9a;
+}
+
+
+
+
+
+/* Стилі для форми відгуку */
+.review-form {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Стилі для заголовка форми */
+.review-form h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color: #ff66b2;
+    margin-bottom: 20px;
+}
+
+/* Стилі для полів форми */
+.review-form .form-group {
+    margin-bottom: 20px;
+    max-width: 570px;
+}
+
+.review-form .form-group label {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.review-form .form-group input,
+.review-form .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+}
+
+.review-form .form-group textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+/* Стилі для кнопки відправки */
+.review-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff66b2;
+    color: #fff;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.review-form button:hover {
+    background-color: #e55b9a;
+}
+
+/* Стилі для помилок */
+.error_messages {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.error_messages ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.error_messages li {
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

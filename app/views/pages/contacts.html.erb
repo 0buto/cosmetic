@@ -1,0 +1,50 @@
+<h1 class="contact-title">Контакти</h1>
+
+<p class="contact-info">Зв'яжіться з нами за допомогою наступної інформації:</p>
+
+<p class="contact-details">
+  <strong>Телефон:</strong> +380 123 456 789<br>
+  <strong>Email:</strong> contact@example.com<br>
+  <strong>Адреса:</strong> м. Івано-Франківськ, вул. Карпатська, 15
+</p>
+
+<h2 class="form-title">Форма для зв'язку:</h2>
+
+<div class="form-container">
+  <%= form_with(method: "get", local: true) do |form| %>
+    <div class="form-group">
+      <%= form.label :name, "Ваше ім'я" %><br>
+      <%= form.text_field :name, required: true, class: 'form-input' %>
+    </div>
+
+    <div class="form-group">
+      <%= form.label :email, "Ваш Email" %><br>
+      <%= form.email_field :email, required: true, class: 'form-input' %>
+    </div>
+
+    <div class="form-group">
+      <%= form.label :message, "Ваше повідомлення" %><br>
+      <%= form.text_area :message, required: true, class: 'form-input' %>
+    </div>
+
+    <div>
+      <%= form.submit "Відправити", class: 'form-submit' %>
+    </div>
+  <% end %>
+</div>
+
+<script type="module">
+    console.log("Скрипт завантажено!"); // Перевірка, чи завантажується скрипт
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Перехоплюємо стандартне відправлення форми
+
+        console.log("Форма була надіслана"); // Лог для перевірки, чи спрацьовує подія
+
+        // Покажемо повідомлення, що лист надіслано
+        alert("Ваше повідомлення надіслано!");
+
+        // Очистимо форму після відправки
+        document.getElementById("contact-form").reset();
+    });
+
+</script>

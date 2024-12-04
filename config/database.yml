@@ -1,0 +1,16 @@
+default: &default
+  adapter: sqlite3
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: postgres
+  password: 123123
+  host: localhost
+  port: 5432
+
+development:
+  <<: *default
+  database: cosmetic_store_development
+
+test:
+  <<: *default
+  database: cosmetic_store_test

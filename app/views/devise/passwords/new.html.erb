@@ -1,0 +1,17 @@
+<h2>Відновлення паролю</h2>
+
+<%= form_with(model: resource, as: resource_name, url: password_path(resource_name), html: { class: 'password-reset-form' }) do |form| %>
+  <div class="form-group">
+    <%= form.label :email, class: 'form-label' %>
+    <%= form.email_field :email, autofocus: true, autocomplete: 'email', class: 'form-input' %>
+  </div>
+
+  <div class="form-group">
+    <%= form.submit 'Відправити інструкції для відновлення паролю', class: 'btn-submit' %>
+  </div>
+
+  <div class="form-links">
+    <%= link_to 'Вже маєте акаунт? Увійдіть!', new_user_session_path, class: 'form-link' %>
+  </div>
+<% end %>
+

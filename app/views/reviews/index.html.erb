@@ -1,0 +1,14 @@
+<div class="reviews-container">
+  <h1>Відгуки наших користувачів</h1>
+
+  <!-- Виводимо всі відгуки -->
+  <% @reviews.each do |review| %>
+    <div class="review-item">
+      <strong><%= review.name %></strong>
+      <p><%= review.content %></p>
+    </div>
+  <% end %>
+
+  <!-- Кнопка для додавання нового відгуку -->
+  <a href="<%= new_review_path %>" class="btn-add-review">Залишити відгук</a>
+</div>

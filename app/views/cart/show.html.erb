@@ -1,0 +1,38 @@
+<h2 class="cart-title">Ваша корзина</h2>
+
+<table class="cart-table">
+  <thead>
+  <tr>
+    <th>Товар</th>
+    <th>Кількість</th>
+    <th>Ціна</th>
+    <th>Дії</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% if @cart_items.present? %>
+    <% @cart_items.each do |item| %>
+      <tr>
+        <td class="product-name"><%= item.product.name %></td>
+        <td class="product-quantity"><%= item.quantity %></td>
+        <td class="product-price"><%= number_to_currency(item.product.price * item.quantity, unit: '₴') %></td>
+        <td class="product-actions">
+          <%= button_to 'Видалити', remove_item_cart_path(item), method: :delete, class: 'remove-btn' %>
+        </td>
+      </tr>
+    <% end %>
+  <% else %>
+    <tr>
+      <td colspan="4" class="empty-cart-message">Ваша корзина порожня.</td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<% if @cart_items.present? %>
+  <h3 class="total-price">Загальна сума: <%= number_to_currency(@cart.total_price, unit: '₴') %></h3>
+  <div class="button-container">
+    <%= link_to 'Оформити замовлення', new_order_path, class: 'checkout-btn' %>
+  </div>
+
+<% end %>

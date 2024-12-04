@@ -1,0 +1,32 @@
+<h1 class="order-title">Оформлення замовлення</h1>
+
+
+<div class="order-form">
+  <div class="form-group">
+    <h3 class="delivery-method-title">Спосіб доставки: <%= @order.delivery_method %></h3>
+    <h3 class="delivery-method-title">Адреса доставки: <%= @order.delivery_address %></h3>
+  </div>
+
+
+  <div class="form-group">
+    <h3 class="total-price-title">Загальна сума: <%= number_to_currency(@order.total_price, unit: '₴') %></h3>
+  </div>
+
+
+  <!-- Форма для оплати (наприклад, Stripe) -->
+  <div class="stripe-button-container">
+  <form action="/orders/<%= @order.id %>/charge" method="post" class="payment-form">
+    <script  src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+            data-key="<%= ENV['STRIPE_PUBLISHABLE_KEY'] %>"
+            data-description="Оплата замовлення"
+            data-amount="<%= (@order.total_price * 100).to_i %>"
+            data-locale="auto"
+            data-currency="uah"
+            data-label="Оплатити"
+
+        ></script>
+  </form>
+  </div>
+</div>
+
+
